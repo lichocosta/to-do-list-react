@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import '../styles/TodoForm.css'
 import { v4 as uuidv4 } from 'uuid'
+import { Stack, Input, InputGroup, InputRightAddon, Button } from "@chakra-ui/react";
 
 function TodoForm(props) {
 
@@ -23,11 +24,11 @@ function TodoForm(props) {
   }
 
   return (
-    <form 
+    <form
       className="todo-form"
       onSubmit={sendTodo}
     >
-      <input 
+      {/* <input 
         type="text" 
         className="todo-input"
         name="text"
@@ -36,7 +37,29 @@ function TodoForm(props) {
       />
       <button className="todo-button">
         Agregar tarea
-      </button>
+      </button> */}
+      
+
+      <Stack spacing={4}>
+
+        <InputGroup size='md'>
+
+          <Input 
+            placeholder='Escribe una tarea' 
+            onChange={changeTodo} 
+            className="todo-input" 
+            name="text"          
+          />
+
+          <InputRightAddon px={0}>
+            <Button className="todo-button" type="submit">
+              Agregar tarea
+            </Button>
+          </InputRightAddon>
+
+        </InputGroup>
+      </Stack>
+      
     </form>
   )
 }

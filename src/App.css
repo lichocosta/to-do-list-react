@@ -4,36 +4,37 @@
   box-sizing: border-box;
 }
 
-html, 
+/* html, 
 body {
   color: white;
   background-color: #1b1b32;
   font-family: Lato, sans-serif;
   margin-top: 40px;
-}
+} */
 
-h1 {
+/* h1 {
   color: #1b1b32;
   font-size: 25px;
   font-family: Roboto, sans-serif;
   text-align: center;
   margin: 20px 0;
-}
+} */
 
-.toDo-app {
+/* .toDo-app {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-}
+  height: 100vh;
+} */
 
 /* Listas de Tareas */
 
-.toDo-list-main {
+/* .toDo-list-main {
   width: 600px;
   min-height: 500px;
   background-color: #d0d0d5;
   padding: 25px;
   margin: 10px;
   border-radius: 26px;
-}
+} */
